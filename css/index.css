@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,700&display=swap");
+/* NORMALIZADOR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-wrap: anywhere; }
+
+/* estilo general del cuerpo */
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 62.5%;
+  word-spacing: 0.3em;
+  letter-spacing: 0.03em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-height: 720px; }
+
+body {
+  display: grid;
+  grid-template-areas: "header header" "aside main" "footer footer";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 10vh auto 10vh;
+  max-width: 1400px;
+  margin: auto; }
+
+/* Estilos de home */
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  background-color: #450ad6;
+  color: white; }
+  header .logo {
+    margin-left: 2rem;
+    width: 10vh;
+    height: auto;
+    background-image: url(../public/CV.png);
+    background-size: cover; }
+  header .menu {
+    display: flex;
+    margin-right: 2rem;
+    align-items: center; }
+  header .navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 1rem; }
+    header .navbar li a {
+      font-size: 2rem;
+      color: white;
+      text-decoration: none;
+      padding: 2rem; }
+      header .navbar li a:hover {
+        background-color: #7448e1; }
+
+aside {
+  margin: 1rem;
+  grid-area: aside;
+  height: 100%; }
+  aside .candidate {
+    display: flex;
+    flex-direction: column; }
+    aside .candidate #candidatePhoto img {
+      max-height: 30vh; }
+
+main {
+  margin: 1rem;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3 auto);
+  grid-gap: 1rem; }
+
+footer {
+  grid-area: footer;
+  background-color: #450ad6; }

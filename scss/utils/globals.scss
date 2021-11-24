@@ -1,0 +1,21 @@
+/* estilo general del cuerpo */
+
+html{
+    font-family: $fontFamily;
+    font-size: 62.5%;
+    word-spacing: 0.3em;
+    letter-spacing: 0.03em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-height: 720px;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "header header" "aside main" "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 10vh auto 10vh;
+    max-width: 1400px;
+    margin: auto;
+
+}
