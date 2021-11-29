@@ -12,6 +12,11 @@ header {
         height: auto;
         background-image: url(../public/CV.png);
         background-size: cover;
+        & a{
+            display: block;
+            width: 10vh;
+            height: 10vh;
+        }
     }
     & .menu{
         display: flex;
@@ -40,6 +45,12 @@ header {
     }
 }
 
+
+.shadows{
+    box-shadow: 0.6rem 0.6rem 0.6rem $third;
+    border-radius: 1rem;
+}
+
 aside{
     margin: 1rem;
     grid-area: aside;
@@ -47,11 +58,49 @@ aside{
     & .candidate{
         display: flex;
         flex-direction: column;
+        padding: 2rem;
+
         & #candidatePhoto img {
-            max-height: 30vh;
+            max-height: 25vh;
         }
 
+        & .candidateData {
+            margin-top: 2rem;
+            font-size: 1.5em;
+            & h2 {
+                color: $primary;
+                text-align: center;
+            }
+            & ul {
+                margin-top: 2rem;
+                line-height: 3rem;
+                text-align: center;
+                list-style: none;
+            }
+        }
+        .actionButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            & button{
+                padding: 1rem 2rem;
+                color: $back-letter;
+                background-color: $primary;
+                border: none;
+                border-radius: 1rem;
+                box-shadow: 2px 2px 2px $third;
+                font-size: 1.8em;
+            }
+        }
     }
+    /* & .front  {
+        position: absolute;
+    }
+    & .back {
+        position: relative;
+    }
+ */
 }
 
 main{
@@ -61,6 +110,11 @@ main{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3 auto);
     grid-gap: 1rem;
+    & article{
+        padding: 1rem;
+        height: 40vh;
+        min-height: 250px;
+    }
 
 }
 
@@ -68,3 +122,5 @@ footer{
     grid-area: footer;
     background-color: $primary;
 }
+
+

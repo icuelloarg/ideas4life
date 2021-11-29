@@ -11,10 +11,10 @@
 <body>
     <!-- Inicio Header con navbar -->
     <header>
-        <div class="logo"></div>
+        <div class="logo"> </div>
         <div class="menu">
             <ul class="navbar">
-                <li><a href="">PROYECTO CV</a></li>
+                <li><a href="views/project.html">PROYECTO CV</a></li>
                 <li><a href="">ARCHIVO PDF</a></li>
                 <li><a href="">FEEDBACK</a></li>
                 <li><a href="">CONTACTO</a></li>
@@ -23,59 +23,85 @@
     </header>
 <!-- Inicio Aside foto y datos -->
     <aside>
-        <div class="candidate">
-            <div class="photo" id="candidatePhoto"><img src="public/15844891_10209337736814042_8587198926150369843_o.jpg" alt=""></div>
-            <div>
-                <h3>Nombre</h3>
-                <p>
-                    <ul>
-                        <li>EDAD</li>
-                        <li>Titulo</li>
-                        <li>residencia</li>
-                        <li>idiomas</li>
-                    </ul>
-                </p>
+        <div class="mainco shadows">
+
+            <div class="fliper maincontainer">
+                
+                <div class="card" id="cardContainer">
+                    <div class="front candidate">
+                        <div class="photo" id="candidatePhoto"><img src="public/IMG_20181029_0829291092.jpg" alt=""></div>
+                        <div class="idText candidateData">
+                            <h2>Isaías Benjamín Cuello</h2>
+                        <p>
+                            <ul>
+                                <li>30 años</li>
+                                <li>Full Stack Developer en formación</li>
+                                <li>Tucumán - Argentina</li>
+                                <li>Español - Inglés - Portugués</li>
+                                <li>icuelloarg@gmail.com</li>
+                            </ul>
+                        </p>
+                         </div>
+                         <div class="actionButton">
+                             <button>Presentación</button>
+                         </div>
+                     </div>
+<!--                      <div class="back candidate shadows">
+                         <div class="photo" id="candidateBack"></div>
+                         <div class="presentationCard">
+                             <p>
+                                 No me gusta que mis primeras palabras en una presentación suenen al cliché de “muchas gracias por leer esto”. Más bien prefiero que esa primera palabra represente el horizonte de mi vida laboral, emocional, familiar y social.
+                                 Me considero una persona con el espíritu de aquellos que buscan superación y desafío. La dinámica de la economía argentina ha asegurado que los escenarios en los que he adquirido experiencia no siempre han sido favorables. Con diplomacia, empatía, amor en las acciones y compromiso por la tarea, puedo decir que aun cuando el resultado no siempre ha sido positivo, sé que he dejado todo y un poco más de lo que pude dar en el terreno.
+                                 Si debo elegir una cualidad de mi persona, con mucho orgullo puedo decir “Transparencia”. A lo largo de mi vida he visto cómo las acciones de las personas -hasta las más pequeñas- afectan a la vida de los demás, no solo en el ámbito laboral. Tomé entonces como un compromiso personal ser un hombre transparente, consciente de las debilidades y fortalezas de las acciones y las palabras, y asumir el deber de aplicarlo no solo en la vida laboral, sino en el día a día. Esto me permitió fortalecer los lazos que ya tenía y mejorar sustancialmente las nuevas relaciones que coseché.
+                             </p>
+                         </div>
+                         <div class="actionButton">
+                             <button>Volver</button>
+                        </div> -->
+
+                    </div>
+                </div>
             </div>
         </div>
     </aside>
 <!-- Inicio principal -->
     <main>
-        <article>
+        <article class="shadows">
             <div class="img"></div>
             <div>
                 <h2>primer articulo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis quod dolorum possimus aperiam saepe in nulla quos libero, dolor nesciunt. Quod consectetur dolor dolorum magni illo laborum, corporis doloribus?</p>
             </div>
         </article>
-        <article>
+        <article class="shadows">
             <div class="img"></div>
             <div>
                 <h2>segundo articulo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis quod dolorum possimus aperiam saepe in nulla quos libero, dolor nesciunt. Quod consectetur dolor dolorum magni illo laborum, corporis doloribus?</p>
             </div>
         </article>
-        <article>
+        <article class="shadows">
             <div class="img"></div>
             <div>
                 <h2>tercer articulo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis quod dolorum possimus aperiam saepe in nulla quos libero, dolor nesciunt. Quod consectetur dolor dolorum magni illo laborum, corporis doloribus?</p>
             </div>
         </article>
-        <article>
+        <article class="shadows">
             <div class="img"></div>
             <div>
                 <h2>cuarto articulo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis quod dolorum possimus aperiam saepe in nulla quos libero, dolor nesciunt. Quod consectetur dolor dolorum magni illo laborum, corporis doloribus?</p>
             </div>
         </article>
-        <article>
+        <article class="shadows">
             <div class="img"></div>
             <div>
                 <h2>quinto articulo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis quod dolorum possimus aperiam saepe in nulla quos libero, dolor nesciunt. Quod consectetur dolor dolorum magni illo laborum, corporis doloribus?</p>
             </div>
         </article>
-        <article>
+        <article class="shadows">
             <div class="img"></div>
             <div>
                 <h2>sexto articulo</h2>
@@ -90,5 +116,7 @@
         </div>
     </footer>
 
+
+<script src="js/index.js"></script>
 </body>
 </html>

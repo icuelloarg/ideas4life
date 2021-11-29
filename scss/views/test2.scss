@@ -1,0 +1,47 @@
+/* Estilo del site */
+
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    background-color: $primary;
+    color: $back-letter;
+    height: 5vh;
+    min-height: 2rem;
+    & .inside{
+        //completing flex
+        justify-content: space-between;
+
+        & .logo{
+        margin-left: 2rem;
+        width: 5vh;
+        height: 5vh;
+        background-image: url(../public/CV.png);
+        background-size: cover;
+        & a{
+            display: block;
+            width: 5vh;
+            height: 5vh;
+        }
+    }
+    & .menu{
+        display: flex;
+        margin-right: 2rem;
+        align-items: center;
+    }
+
+}
+}
+
+main{
+    grid-area: main;
+    & .navbar-2{
+        background-color: $primary;
+        height: 5vh;
+        min-height: 40px;
+        & .mainNav {
+            justify-content: right;
+        }
+    }
+}
