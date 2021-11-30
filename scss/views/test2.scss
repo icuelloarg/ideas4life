@@ -25,23 +25,66 @@ header {
             height: 5vh;
         }
     }
-    & .menu{
-        display: flex;
-        margin-right: 2rem;
-        align-items: center;
-    }
+    
 
 }
+}
+.menu{
+    display: flex;
+    margin-right: 2rem;
+    align-items: center;
+}
+
+main div{
+    
+    & .candidateName{
+        color: $back-letter;
+        margin-left: 2rem;
+        letter-spacing: 0.3em;
+    }
+    
+    & .candidatePhoto {
+        position: relative;
+        top: -90%;
+        left: 11%;
+        background-image: url(../public/IMG_20181029_0829291092.jpg);
+        height: 20vh;
+        width: 20vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        background-position: center;
+    }
 }
 
 main{
     grid-area: main;
+    & section{
+        font-size: 1.6em;
+        & .imgPresent{
+            background-image: url(../public/IMG_20180208_124604341.jpg);
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+        }
+    }
+    & .mainDiv {
+        position: sticky;
+        top: 16vh;
+    }
     & .navbar-2{
         background-color: $primary;
         height: 5vh;
         min-height: 40px;
+        align-items: center;
+        justify-content: space-between;
         & .mainNav {
             justify-content: right;
         }
+    }
+    & .firstSection {
+        padding-top: 4vh;
+        background-color: $back-letter;
+        
     }
 }

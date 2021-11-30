@@ -35,7 +35,13 @@ body{
     } 
 }
 .container{
-    max-width: 1400px;
+    max-width: $genWidth;
+    width: 100%;
+    margin: auto;
+}
+
+.container-2{
+    max-width: 1200px;
     width: 100%;
     margin: auto;
 }
@@ -60,6 +66,9 @@ body{
     background-position-y: center;
 }
 
+p{
+    text-align: justify;
+}
 
 
 
