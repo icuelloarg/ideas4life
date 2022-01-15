@@ -6,117 +6,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual CV</title>
     <link rel="icon" type="image/png" href="public/CV-colour-invert.png" />
-       <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <!-- Inicio Header con navbar -->
-    <header>
-        <div class="logo"> </div>
-        <div class="menu">
-            <ul class="navbar">
-                <li><a href="views/project.html">PROYECTO CV</a></li>
-                <li><a href="">ARCHIVO PDF</a></li>
-                <li><a href="">FEEDBACK</a></li>
-                <li><a href="">CONTACTO</a></li>
-            </ul>
-        </div>
-    </header>
-<!-- Inicio Aside foto y datos -->
-    <aside>
-        <div class="mainco shadows">
+        <!-- starts header with navbar -->
+        <header>
+            
+                 <div class="container inside flex-row" id="projectHeader">
+                     <div class="logo"> </div>
+                     <div class="menu">
+                         <ul class="navbar flex-row">
+                             <li><a href="project.html">PROYECTO CV</a></li>
+                             <li><a href="">ARCHIVO PDF</a></li>
+                             <li><a href="">FEEDBACK</a></li>
+                             <li><a href="">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </div>   
+               
+        </header>
+        <!-- ends header -->
+        <section class="carousel-1" id="carousel">
 
-            <div class="fliper maincontainer">
-                
-                <div class="card" id="cardContainer">
-                    <div class="front candidate">
-                        <div class="photo" id="candidatePhoto"><img src="public/IMG_20181029_0829291092.jpg" alt=""></div>
-                        <div class="idText candidateData">
-                            <h2>Isaías Benjamín Cuello</h2>
-                        <p>
-                            <ul>
-                                <li>30 años</li>
-                                <li>Full Stack Developer en formación</li>
-                                <li>Tucumán - Argentina</li>
-                                <li>Español - Inglés - Portugués</li>
-                                <li>icuelloarg@gmail.com</li>
-                            </ul>
-                        </p>
-                         </div>
-                         <div class="actionButton">
-                             <button>Presentación</button>
-                         </div>
-                     </div>
-<!--                      <div class="back candidate shadows">
-                         <div class="photo" id="candidateBack"></div>
-                         <div class="presentationCard">
-                             <p>
-                                 No me gusta que mis primeras palabras en una presentación suenen al cliché de “muchas gracias por leer esto”. Más bien prefiero que esa primera palabra represente el horizonte de mi vida laboral, emocional, familiar y social.
-                                 Me considero una persona con el espíritu de aquellos que buscan superación y desafío. La dinámica de la economía argentina ha asegurado que los escenarios en los que he adquirido experiencia no siempre han sido favorables. Con diplomacia, empatía, amor en las acciones y compromiso por la tarea, puedo decir que aun cuando el resultado no siempre ha sido positivo, sé que he dejado todo y un poco más de lo que pude dar en el terreno.
-                                 Si debo elegir una cualidad de mi persona, con mucho orgullo puedo decir “Transparencia”. A lo largo de mi vida he visto cómo las acciones de las personas -hasta las más pequeñas- afectan a la vida de los demás, no solo en el ámbito laboral. Tomé entonces como un compromiso personal ser un hombre transparente, consciente de las debilidades y fortalezas de las acciones y las palabras, y asumir el deber de aplicarlo no solo en la vida laboral, sino en el día a día. Esto me permitió fortalecer los lazos que ya tenía y mejorar sustancialmente las nuevas relaciones que coseché.
-                             </p>
-                         </div>
-                         <div class="actionButton">
-                             <button>Volver</button>
-                        </div> -->
+        </section>
+        <!-- Starts main section -->
+        <main>
+            <div class="navbar-2 flex-row mainDiv" id="mainHeader">
+                <div class="container navbar-2 flex-row">
+                    <div class="candidateName" id="candidate1">
+                        <h2>Isaias Benjamin Cuello</h2>
+                        <p>Web Developer</p>
+                    </div>
+                    <div class="candidatePhoto">
+                        
+                    </div>
+                    
+                    <nav class="menu mainNav flex-row" id="mainNavbar">
+                        <ul class="navbar flex-row">
+                            <li><a href="">EDUCACION</a></li>
+                            <li><a href="">EXPERIENCIA</a></li>
+                            <li><a href="">SOBRE MI</a></li>
+                            <li><a href="">REFERENCIAS</a></li>
+                            <li><a href="">MEDIA</a></li>
+                        </ul>
+                    </nav>                 
+                </div>
+            </div>
+            <!-- Starts presentation -->
+            <section class="firstSection" id="firstSection">
+                <div class="presentation container-2 flex-row" id="presentation1">
+                    <div class="imgPresent" id="imgPresent"></div>
+                    <div class="presDiv" id="presDiv1">
+                        <h2 class="title2" id="titlePres">Bienvenido!</h2>
+                        <p>Hola! Soy Isaías Benjamín Cuello. En esta web encontrará mi hoja de vida, de forma ordenada y amigable. Podrá conocer las características que a usted le interesen, laborales y personales, e incluso dejar un comentario o un feedback. <br><br>
+                        Mi objetivo laboral en este momento es iniciar mi camino en la Tecnología de la Información. 
+                        <a class="readMore" id="readMore">...[leer más]</a></p> <br>
+                        <p class="plusParagraph" id="plusText">Actualmente soy estudiante de la carrera Full Stack Developer en Coderhouse, habiendo ya completado Web Developing y próximo a completar Javascript. Para marzo 2022 habré completado ReactJS, y en agosto finalizaría BackEnd. Además, estoy realizando cursos complementarios de WordPress, PHP y SQL. En mediano plazo, mi objetivo es encarar la carrera Data Science. <br><br>
+                            Soy una persona de metas y a lo largo de mi vida laboral me he caracterizado por una esencial orientación a resultados. Trabajo cada día para ser quien se recurre en busca de soluciones; accesible y comprometida. <br><br>
+                            Me gusta la transparencia como valor fundamental, el servicio y el ejemplo como formas de liderazgo, y la constante capacitación, adaptabilidad e intercambio de ideas para el crecimiento personal y profesional. <br><br>
+                            Tengo fuertes vínculos con mis amigos y mi familia, me gusta compartir tiempo de calidad con ellos, y considero que gran parte de quien soy y quien trabajo por ser, es gracias a ellos. <br><br>
+                            En los entornos laborales me gusta llevar a la práctica mis conocimientos, mejorar con la práctica, y aprender del conocimiento de otros. Me desempeño sin problemas en ámbitos de presión, y suelo trabajar con plazos y deadlines. <br><br>
+                            Habiéndome presentado, le invito a conocer más sobre mi navegando esta web. <br><br>
+                            Gracias! 
+                             <a class="readLess" id="readLess">[leer menos]</a>
+                        </p> 
+                    </div>
+                </div>
+            </section>
+            <!-- Ends presentation -->
+            <!-- Starts education -->
+            <section class="education" id="educationSec">
+                <div class="educationDiv container-2">
+                    <div class="imgEd" id="imgEd"></div>
+                    <div class="edDiv" id="edDiv1">
+                        <h2 class="title2" id="titleEd">JavaScript</h2>
+                        <p>En el camino de la <a href="https://us.coderhouse.com/online/carrera-online-desarrollo-fullstack" target="_blank"> Carrera de Programación Full Stack</a>, aprobé el curso JavaScript con nota DIEZ en mi Proyecto Final, quedando en el Top10 de mi camada. <br>
+                            <a href="https://us.coderhouse.com/online/javascript" target="_blank">Chequear programa del curso aprobado.</a> <br>
+                           <a href="https://icuelloarg.github.io/javascriptOne/" target="_blank"> Puede chequear mi Proyecto Final aquí.</a>
+                        </p> 
+                    </div>
+                    <div class="imgEd2" id="imgEd2"></div>
+                    <div class="edDiv2" id="edDiv2">
+                        <h2 class="title2" id="titleEd">Desarrollo Web</h2>
+                        <p>La primera etapa de la <a href="https://us.coderhouse.com/online/carrera-online-desarrollo-fullstack" target="_blank"> Carrera de Programación Full Stack</a>, aprobé el curso Desarrollo Web con nota DIEZ en mi Proyecto Final. Adquiriendo de forma intensiva conocimientos en HTML5, CSS3, SCSS, Bootstrap, Hosting<br>
+                            <a href="https://us.coderhouse.com/online/desarrollo-web-online" target="_blank">Chequear programa del curso aprobado.</a> <br>
+                           <a href="https://icuelloarg.github.io/NoTrashFinal/" target="_blank"> Puede chequear mi Proyecto Final aquí.</a>
+                        </p> 
+                    </div>
+                    <div class="imgEd3" id="imgEd3"></div>
+                    <div class="edDiv3" id="edDiv3">
+                        <h2 class="title2" id="titleEd">Formación previa</h2>
+                        <h3>Ingeniería Civil - UTN FRT - 2017</h3>
+                        <p> Incompleto. Avance 30%. Conocimientos de Física básica, Análisis Matemático ciclo básico regular, Algebra.                       </p> 
+                        <h3>Abogacía - UES21 - 2013</h3>
+                        <p> Incompleto. Avance al 85%. Conocimientos avanzados del sistema legal argentino orientado a la legislación empresarial y tributaria.</p>
+                        <h3>Bachiller BILINGUE - Colegio Pablo Apóstol - 2008</h3>
+                        <p> Modalidad Humanidades y Ciencias Sociales. Formación español/inglés.</p>
+                    </div>
+                    <div class="edDiv4" id="edDiv4">
+                        <h2 class="title2" id="titleEd">Idiomas</h2>
+                        <div class="meter">
+                            <h4>Español - Nativo</h4>
+                            <span class="meter1"></span>
+                        </div>
+                        <div class="meter">
+                            <h4>Inglés - Intermedio Avanzado</h4>
+                            <span class="meter2"></span>
+                        </div>
+                        <div class="meter">
+                            <h4>Portugués - Básico</h4>
+                            <span class="meter3"></span>
+                        </div>
+                        <h2 class="title2" id="titleEd">Habilidades complementarias</h2>
+                        <div class="meter">
+                            <h4>HTML, CSS, SCSS</h4>
+                            <span class="meter4"></span>
+                        </div>
+                        <div class="meter">
+                            <h4>Javascript</h4>
+                            <span class="meter5"></span>
+                        </div>
+                        <div class="meter">
+                            <h4>Git - Github</h4>
+                            <span class="meter6"></span>
+                        </div>
+                        <div class="meter">
+                            <h4>Visual Studio Code, Figma, Slack</h4>
+                            <span class="meter7"></span>
+                        </div>
+                        <div class="meter">
+                            <h4>Microsoft Office Package</h4>
+                            <span class="meter8"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Ends education -->
+            <!-- Starts experiences -->
+            <section class="workExp" id="experienceSec">
+                <div class="experienceDiv container-2">
+                    <div class="imgExp" id="imgExp1"></div>
+                    <div class="expDiv" id="expDiv1">
+                        <h2 class="title2" id="titleExp">Gerente General - Encargado</h2>
+                        <h3>Los Castaños Parador de Montaña, Tafi del Valle - SEP-20 / FEB-21</h3>
+                        <p>Bar-restaurant de temporada en Tafí del Valle. 34 personas a cargo.
+                            Los Castaños se caracterizó por su multiplicidad de unidades de negocio. Parrilla, Heladería y Bar-Restaurant.
+                            Desde su concepción inicial hasta su cierre, fue mi tarea la planificación del plan de negocio gastronómico, su funcionalidad y desempeño. Convenio y compra a proveedores, cotejo de precios, acuerdos de pago.
+                            Durante la operación del complejo, eran mis tareas: gestión integral de las unidades de negocio, gestión y orden del personal, control de stocks y producción, elaboración y planificación de los índices de rentabilidad, pago de empleados y proveedores, seguimiento financiero del negocio, acciones puntuales para aumentar venta o índices.
+                            </p> 
+                    </div>
+                    <div class="imgExp" id="imgExp2"></div>
+                    <div class="expDiv" id="expDiv2">
+                        <h2 class="title2" id="titleExp">CEO Fundador - Director General</h2>
+                        <h3>Outlanders EVT - FEB-17 / DIC-20</h3>
+                        <p>Empresa Operadora de Turismo Receptivo <br>
+                            Administración de relaciones públicas y privadas de utilidad para la empresa.
+                            Determinación de las políticas de desempeño, trabajo, relación, y financieras para el sostenimiento de la operatoria.
+                            Conducción de la agenda de la empresa, participación de los foros, misiones comerciales público/privadas, apertura de mercados y negociación de acuerdos. Relaciones internacionales con organismos públicos y privados.
+                            Coordinación in situ de contrataciones extraordinarios. Congresos, Eventos especiales, MotoGP Termas de Rio Hondo.
+                            Administración de las relaciones de personal a cargo, coordinación de las acciones especiales de la empresa.
+                            </p> 
+                    </div>
+                    <div class="imgExp" id="imgExp3"></div>
+                    <div class="expDiv" id="expDiv3">
+                        <h2 class="title2" id="titleExp">Auxiliar Jurídico</h2>
+                        <h3>Dpto Jurídico Agencia Fiscal AFIP DGI - MAY-10 / SEP-17</h3>
+                        <p> Gestión de cobranza coactiva, Administración de información fiscal, armado de expedientes administrativos y judiciales, inventario.
+                            Gestión de demandas judiciales, redacción de escritos y ejecución de medidas judiciales. 
+                            Gestión de sistema informático de información fiscal, sistemas online de medidas cautelares, embargos y trabas de cuentas bancarias e inhibiciones a bienes.
+                             </p> 
 
                     </div>
                 </div>
-            </div>
-        </div>
-    </aside>
-<!-- Inicio principal -->
-    <main>
-        <article class="shadows">
-            <div class="img"></div>
-            <div>
-                <h2>primer articulo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis quod dolorum possimus aperiam saepe in nulla quos libero, dolor nesciunt. Quod consectetur dolor dolorum magni illo laborum, corporis doloribus?</p>
-            </div>
-        </article>
-        <article class="shadows">
-            <div class="img"></div>
-            <div>
-                <h2>segundo articulo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis quod dolorum possimus aperiam saepe in nulla quos libero, dolor nesciunt. Quod consectetur dolor dolorum magni illo laborum, corporis doloribus?</p>
-            </div>
-        </article>
-        <article class="shadows">
-            <div class="img"></div>
-            <div>
-                <h2>tercer articulo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis quod dolorum possimus aperiam saepe in nulla quos libero, dolor nesciunt. Quod consectetur dolor dolorum magni illo laborum, corporis doloribus?</p>
-            </div>
-        </article>
-        <article class="shadows">
-            <div class="img"></div>
-            <div>
-                <h2>cuarto articulo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis quod dolorum possimus aperiam saepe in nulla quos libero, dolor nesciunt. Quod consectetur dolor dolorum magni illo laborum, corporis doloribus?</p>
-            </div>
-        </article>
-        <article class="shadows">
-            <div class="img"></div>
-            <div>
-                <h2>quinto articulo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis quod dolorum possimus aperiam saepe in nulla quos libero, dolor nesciunt. Quod consectetur dolor dolorum magni illo laborum, corporis doloribus?</p>
-            </div>
-        </article>
-        <article class="shadows">
-            <div class="img"></div>
-            <div>
-                <h2>sexto articulo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis quod dolorum possimus aperiam saepe in nulla quos libero, dolor nesciunt. Quod consectetur dolor dolorum magni illo laborum, corporis doloribus?</p>
-            </div>
-        </article>
-    </main>
-<!-- Inicio Footer -->
-    <footer>
-        <div>
-            <p>footer</p>
-        </div>
-    </footer>
+            </section>
+            <!-- Ends experiences -->
+            <!-- Starts about me section -->
+            <section class="about" id="about1">
+                <div class="aboutSec container-2">
+                    <div class="imgAbout" id="imgAbout1"></div>
+                    <div class="aboutDiv" id="aboutDiv1">
+                        <h2 class="title2" id="titleAbout">Gerente General - Encargado</h2>
+                        <h3>Los Castaños Parador de Montaña, Tafi del Valle - SEP-20 / FEB-21</h3>
+                        <p>Bar-restaurant de temporada en Tafí del Valle. 34 personas a cargo.
+                            Los Castaños se caracterizó por su multiplicidad de unidades de negocio. Parrilla, Heladería y Bar-Restaurant.
+                            Desde su concepción inicial hasta su cierre, fue mi tarea la planificación del plan de negocio gastronómico, su funcionalidad y desempeño. Convenio y compra a proveedores, cotejo de precios, acuerdos de pago.
+                            Durante la operación del complejo, eran mis tareas: gestión integral de las unidades de negocio, gestión y orden del personal, control de stocks y producción, elaboración y planificación de los índices de rentabilidad, pago de empleados y proveedores, seguimiento financiero del negocio, acciones puntuales para aumentar venta o índices.
+                            </p> 
+                    </div>
+                    <div class="imgAbout" id="imgAbout2"></div>
+                    <div class="aboutDiv" id="aboutDiv2">
+                        <h2 class="title2" id="titleAbout">Gerente General - Encargado</h2>
+                        <h3>Los Castaños Parador de Montaña, Tafi del Valle - SEP-20 / FEB-21</h3>
+                        <p>Bar-restaurant de temporada en Tafí del Valle. 34 personas a cargo.
+                            Los Castaños se caracterizó por su multiplicidad de unidades de negocio. Parrilla, Heladería y Bar-Restaurant.
+                            Desde su concepción inicial hasta su cierre, fue mi tarea la planificación del plan de negocio gastronómico, su funcionalidad y desempeño. Convenio y compra a proveedores, cotejo de precios, acuerdos de pago.
+                            Durante la operación del complejo, eran mis tareas: gestión integral de las unidades de negocio, gestión y orden del personal, control de stocks y producción, elaboración y planificación de los índices de rentabilidad, pago de empleados y proveedores, seguimiento financiero del negocio, acciones puntuales para aumentar venta o índices.
+                            </p> 
+                    </div>
+                    <div class="imgAbout" id="imgAbout3"></div>
+                    <div class="aboutDiv" id="aboutDiv3">
+                        <h2 class="title2" id="titleAbout">Gerente General - Encargado</h2>
+                        <h3>Los Castaños Parador de Montaña, Tafi del Valle - SEP-20 / FEB-21</h3>
+                        <p>Bar-restaurant de temporada en Tafí del Valle. 34 personas a cargo.
+                            Los Castaños se caracterizó por su multiplicidad de unidades de negocio. Parrilla, Heladería y Bar-Restaurant.
+                            Desde su concepción inicial hasta su cierre, fue mi tarea la planificación del plan de negocio gastronómico, su funcionalidad y desempeño. Convenio y compra a proveedores, cotejo de precios, acuerdos de pago.
+                            Durante la operación del complejo, eran mis tareas: gestión integral de las unidades de negocio, gestión y orden del personal, control de stocks y producción, elaboración y planificación de los índices de rentabilidad, pago de empleados y proveedores, seguimiento financiero del negocio, acciones puntuales para aumentar venta o índices.
+                            </p> 
+                    </div>
+                </div>
+            </section>
+            <!-- Ends about me section -->
 
+        </main>
+        <footer>
 
-<script src="js/index.js"></script>
+        </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

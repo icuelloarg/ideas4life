@@ -66,8 +66,22 @@ body{
     background-position-y: center;
 }
 
+.title2 {
+    color: $secondary;
+}
+
 p{
     text-align: justify;
+}
+
+.readMore, .readLess {
+    text-decoration: underline;
+    color: $secondary;
+    cursor: pointer;
+}
+
+.readMore-1{
+    display: none;
 }
 
 

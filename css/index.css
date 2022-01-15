@@ -58,8 +58,19 @@ body {
   background-size: cover;
   background-position-y: center; }
 
+.title2 {
+  color: #4a27a1; }
+
 p {
   text-align: justify; }
+
+.readMore, .readLess {
+  text-decoration: underline;
+  color: #4a27a1;
+  cursor: pointer; }
+
+.readMore-1 {
+  display: none; }
 
 /*  
     & .maincontainer {
@@ -143,12 +154,8 @@ main div .candidatePhoto {
 main {
   grid-area: main; }
   main section {
-    font-size: 1.6em; }
-    main section .imgPresent {
-      background-image: url(../public/IMG_20180208_124604341.jpg);
-      height: 100%;
-      width: 100%;
-      background-size: cover; }
+    font-size: 1.6em;
+    padding: 0 1rem; }
   main .mainDiv {
     position: sticky;
     top: 16vh; }
@@ -161,5 +168,112 @@ main {
     main .navbar-2 .mainNav {
       justify-content: right; }
   main .firstSection {
-    padding-top: 4vh;
+    padding: 4vh 0 4vh 0;
     background-color: #ffffee; }
+    main .firstSection .presentation {
+      padding: 2rem;
+      box-shadow: 3px 3px 3px #4a27a1;
+      border-radius: 1rem; }
+    main .firstSection .imgPresent {
+      flex: 0 0 auto;
+      background-image: url(../public/IMG_20180208_124604341.jpg);
+      width: 35%;
+      min-height: 150px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-x: center; }
+    main .firstSection .presDiv {
+      padding-left: 3rem; }
+    main .firstSection .plusParagraph {
+      display: none; }
+    main .firstSection .plusParagraph1 {
+      display: inline; }
+  main .educationDiv {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "img1 text1" "img2 text2" "img3 text3" "img4 text4";
+    row-gap: 2rem;
+    column-gap: 2rem; }
+    main .educationDiv h2 {
+      margin-bottom: 1rem; }
+    main .educationDiv .imgEd {
+      grid-area: img1;
+      background-image: url(../public/jscertif.jpg);
+      background-size: 75%;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      height: 22vh; }
+    main .educationDiv .edDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 2rem;
+      grid-area: text1; }
+    main .educationDiv .imgEd2 {
+      grid-area: img2;
+      background-image: url(../public/dwcertif.jpg);
+      background-size: 75%;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      height: 22vh; }
+    main .educationDiv .edDiv2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 2rem;
+      grid-area: text2; }
+    main .educationDiv .imgEd3 {
+      grid-area: img3; }
+    main .educationDiv .edDiv3 {
+      grid-area: text3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 2rem; }
+    main .educationDiv .edDiv4 {
+      grid-area: text4;
+      padding: 2rem; }
+      main .educationDiv .edDiv4 .meter {
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 0; }
+        main .educationDiv .edDiv4 .meter h4 {
+          align-self: center;
+          display: inline; }
+        main .educationDiv .edDiv4 .meter span {
+          display: inline;
+          height: 100%;
+          background-size: contain;
+          background-repeat: repeat-x;
+          border-radius: 2rem 0 0 2rem; }
+        main .educationDiv .edDiv4 .meter .meter1 {
+          width: 90%;
+          background-image: url(../public/es.webp); }
+        main .educationDiv .edDiv4 .meter .meter2 {
+          width: 70%;
+          background-image: url(../public/gb.webp); }
+        main .educationDiv .edDiv4 .meter .meter3 {
+          width: 25%;
+          background-image: url(../public/br.webp); }
+  main .experienceDiv {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "img1 text1" "img2 text2" "img3 text3";
+    row-gap: 2rem;
+    column-gap: 2rem; }
+    main .experienceDiv .expDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 2rem; }
+    main .experienceDiv #expDiv1 {
+      grid-area: text1; }
+    main .experienceDiv #expDiv2 {
+      grid-area: text2; }
+    main .experienceDiv #expDiv3 {
+      grid-area: text3; }
