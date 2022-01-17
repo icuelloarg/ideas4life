@@ -277,3 +277,20 @@ main {
       grid-area: text2; }
     main .experienceDiv #expDiv3 {
       grid-area: text3; }
+  main .aboutSec {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "img1 text1" "img2 text2" "img3 text3";
+    row-gap: 2rem;
+    column-gap: 2rem; }
+    main .aboutSec .aboutDiv {
+      padding: 2rem; }
+    main .aboutSec #aboutDiv1 {
+      grid-area: text1; }
+    main .aboutSec #aboutDiv2 {
+      grid-area: text2; }
+      main .aboutSec #aboutDiv2 p {
+        margin: 1rem 0; }
+      main .aboutSec #aboutDiv2 ul {
+        margin-left: 2rem; }

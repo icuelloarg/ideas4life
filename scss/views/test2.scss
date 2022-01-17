@@ -219,4 +219,27 @@ main{
             grid-area: text3;
         }
     }
+    & .aboutSec{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "img1 text1" "img2 text2" "img3 text3";
+        row-gap: 2rem;
+        column-gap: 2rem;
+        & .aboutDiv{
+            padding: 2rem;
+        }
+        & #aboutDiv1{
+            grid-area: text1;
+        }
+        & #aboutDiv2{
+            grid-area: text2;
+            & p{
+                margin: 1rem 0;
+            }
+            & ul{
+                margin-left: 2rem;
+            }
+        }
+    }
 }
