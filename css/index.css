@@ -58,6 +58,10 @@ body {
   background-size: cover;
   background-position-y: center; }
 
+.title1 {
+  color: #ffffee;
+  padding: 1.2rem; }
+
 .title2 {
   color: #4a27a1; }
 
@@ -154,8 +158,7 @@ main div .candidatePhoto {
 main {
   grid-area: main; }
   main section {
-    font-size: 1.6em;
-    padding: 0 1rem; }
+    font-size: 1.6em; }
   main .mainDiv {
     position: sticky;
     top: 16vh; }
@@ -188,13 +191,36 @@ main {
       display: none; }
     main .firstSection .plusParagraph1 {
       display: inline; }
+  main .slideOn {
+    text-decoration: none;
+    background-color: #1f0561;
+    position: relative;
+    overflow: hidden; }
+    main .slideOn:hover {
+      box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4); }
+    main .slideOn:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(146, 148, 248, 0.4), transparent);
+      transition: all 650ms; }
+    main .slideOn:hover:before {
+      left: 100%; }
   main .educationDiv {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "img1 text1" "img2 text2" "img3 text3" "img4 text4";
     row-gap: 2rem;
-    column-gap: 2rem; }
+    column-gap: 2rem;
+    padding: 0 1rem;
+    transition: height 0.35s ease-in-out;
+    overflow: hidden; }
+    main .educationDiv:not(.active) {
+      display: none; }
     main .educationDiv h2 {
       margin-bottom: 1rem; }
     main .educationDiv .imgEd {
@@ -265,7 +291,11 @@ main {
     grid-template-rows: auto auto auto;
     grid-template-areas: "img1 text1" "img2 text2" "img3 text3";
     row-gap: 2rem;
-    column-gap: 2rem; }
+    column-gap: 2rem;
+    transition: height 0.35s ease-in-out;
+    overflow: hidden; }
+    main .experienceDiv:not(.active) {
+      display: none; }
     main .experienceDiv .expDiv {
       display: flex;
       flex-direction: column;
@@ -283,7 +313,11 @@ main {
     grid-template-rows: auto auto auto;
     grid-template-areas: "img1 text1" "img2 text2" "img3 text3";
     row-gap: 2rem;
-    column-gap: 2rem; }
+    column-gap: 2rem;
+    transition: height 0.35s ease-in-out;
+    overflow: hidden; }
+    main .aboutSec:not(.active) {
+      display: none; }
     main .aboutSec .aboutDiv {
       padding: 2rem; }
     main .aboutSec #aboutDiv1 {
@@ -293,4 +327,10 @@ main {
       main .aboutSec #aboutDiv2 p {
         margin: 1rem 0; }
       main .aboutSec #aboutDiv2 ul {
+        margin-left: 2rem; }
+    main .aboutSec #aboutDiv3 {
+      grid-area: text3; }
+      main .aboutSec #aboutDiv3 p {
+        margin: 1rem 0; }
+      main .aboutSec #aboutDiv3 ul {
         margin-left: 2rem; }

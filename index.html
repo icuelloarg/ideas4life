@@ -76,7 +76,12 @@
             <!-- Ends presentation -->
             <!-- Starts education -->
             <section class="education" id="educationSec">
-                <div class="educationDiv container-2">
+                <div class="slideOn" data-container="slidEd" id="sliderEd">
+                    <div class="container-2" id="titleSlidEd">
+                        <h3 class="title1" id="titleEd"><a>Formación</a></h3>
+                    </div>
+                </div>
+                <div class="educationDiv container-2" id="slidEd">
                     <div class="imgEd" id="imgEd"></div>
                     <div class="edDiv" id="edDiv1">
                         <h2 class="title2" id="titleEd">JavaScript</h2>
@@ -144,7 +149,12 @@
             <!-- Ends education -->
             <!-- Starts experiences -->
             <section class="workExp" id="experienceSec">
-                <div class="experienceDiv container-2">
+                <div class="slideOn active" data-container="slidExp" id="titlExp">
+                    <div class="container-2" id="titleSlidExp">
+                        <h3 class="title1" id="titleExp"><a>Experiencia Laboral</a></h3>
+                    </div>
+                </div>
+                <div class="experienceDiv container-2 open" id="slidExp">
                     <div class="imgExp" id="imgExp1"></div>
                     <div class="expDiv" id="expDiv1">
                         <h2 class="title2" id="titleExp">Gerente General - Encargado</h2>
@@ -182,7 +192,12 @@
             <!-- Ends experiences -->
             <!-- Starts about me section -->
             <section class="about" id="about1">
-                <div class="aboutSec container-2">
+                <div class="slideOn js-toggle" data-container="slideAbo" id="sliderAbout">
+                    <div class="container-2" id="titleSlidAbout">
+                        <h3 class="title1" id="titleAbout"><a>Sobre mi persona</a></h3>
+                    </div>
+                </div>
+                <div class="aboutSec container-2" id="slideAbo">
                     <div class="imgAbout" id="imgAbout1"></div>
                     <div class="aboutDiv" id="aboutDiv1">
                         <h2 class="title2" id="titleAbout">Unas palabras para conocerme mejor</h2>
@@ -200,6 +215,7 @@
                         <p>Me considero un trabajador ordenado, estratégico y planificador. Me gusta conocer la materia para mejorar mis acciones y me encanta compartir conocimientos.</p>
                         <p>Tengo una familia numerosa y cada vez más grande. Disfruto mucho de los momentos juntos y las experiencias que cada uno brinda en nuestra vida, desde los más pequeños hasta los más expertos.</p>
                         <p>Considero fundamentales a mis amigos de toda la vida. Los amo con todo el corazón y realmente siento que han sido grandes pilares en distintos aspectos de mi desarrollo. Me gusta sentir que tanto como ellos han influido en mí, han hecho de mi una persona todos los días un poquito mejor.</p>
+                        <h2 class="title2" id="titleAbout">Pasatiempos</h2>
                         <p>Soy amante de la vida al aire libre. Disfruto de los paseos en medio de la naturaleza, el trekking y el ciclismo. De los lugares del mundo que conozco, los que más me gustan son aquellos donde puedo tener mucho contacto con la naturaleza.</p>
                         <p>Me gusta mucho leer, trato de leer un libro distinto cada mes, aunque a veces es difícil. Mis 4 libros favoritos son:                        </p>
                             <ul>
@@ -211,16 +227,23 @@
 
                         <p>Tengo un compromiso propio, que me costó convertirlo en un hábito, pero me hace muy orgulloso. Desde hace unos años y gracias a abrirme a nuevas experiencias y a muchos consejos, trabajo todos los días por ser un poquito mejor que el día anterior. Leyendo algo nuevo, aprendiendo una nueva disciplina, cocinando algo distinto, ayudando a quien lo necesite. Realmente ha cambiado mi vida y creo que me abrió muchas puertas. </p>
                     </div>
-              <!--       <div class="imgAbout" id="imgAbout3"></div>
+                    <div class="imgAbout" id="imgAbout3"></div>
                     <div class="aboutDiv" id="aboutDiv3">
-                        <h2 class="title2" id="titleAbout">Gerente General - Encargado</h2>
-                        <h3>Los Castaños Parador de Montaña, Tafi del Valle - SEP-20 / FEB-21</h3>
-                        <p>Bar-restaurant de temporada en Tafí del Valle. 34 personas a cargo.
-                            Los Castaños se caracterizó por su multiplicidad de unidades de negocio. Parrilla, Heladería y Bar-Restaurant.
-                            Desde su concepción inicial hasta su cierre, fue mi tarea la planificación del plan de negocio gastronómico, su funcionalidad y desempeño. Convenio y compra a proveedores, cotejo de precios, acuerdos de pago.
-                            Durante la operación del complejo, eran mis tareas: gestión integral de las unidades de negocio, gestión y orden del personal, control de stocks y producción, elaboración y planificación de los índices de rentabilidad, pago de empleados y proveedores, seguimiento financiero del negocio, acciones puntuales para aumentar venta o índices.
-                            </p> 
-                    </div> -->
+                        <h2 class="title2" id="titleAbout">Fortalezas y Debilidades</h2>
+                        <h3>Fortalezas</h3>
+                        <ul>
+                            <li>Soy una persona comprometida con mis objetivos y metas, y con las tareas que son mi responsabilidad.</li>
+                            <li>Soy dispuesto y leal a mi equipo y a la dinamica de trabajo. Busco consensos cuando se requiera un cambio de visión.</li>
+                            <li>Me gusta la acción. Priorizo el "hacer" por sobre el "posponer". Siempre priorizo el cumplimiento de los objetivos por encima de los egoismos personales.</li>
+                            <li>Soy estructurado en el plan y en el proceso. Me permite visualizar mejor los resultados esperados. Soy accesible para quienes requieren ayuda o asistencia.</li>
+                        </ul>
+                        <h3>Debilidades</h3>
+                        <ul>
+                            <li>En ocasiones considero que mi visión u opinión es más valiosa que otras. Como ejercicio personal, a raíz de esto soy muy crítico conmigo mismo y me obligo a cotejar primero las otras posiciones.</li>
+                            <li>Considero que el tiempo es dinero, y a veces debido a ello me cuesta separar los tiempos de trabajo de los tiempos de descanso. Para mejorar suelo proponerme estructuras de horarios u objetivos por plazos.</li>
+                            <li>Puedo desmotivarme fuertemente cuando por razones propias o externas un proyecto se ve amenazado o terminado prematuramente. Me afecta sensiblemente. Suelo entonces tomarme un tiempo para pensar en lo que se podría haber hecho distinto y aprender para la siguiente oportunidad.</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <!-- Ends about me section -->
