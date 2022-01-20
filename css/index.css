@@ -161,7 +161,8 @@ main {
     font-size: 1.6em; }
   main .mainDiv {
     position: sticky;
-    top: 16vh; }
+    top: 16vh;
+    z-index: 2; }
   main .navbar-2 {
     background-color: #1f0561;
     height: 5vh;
@@ -195,7 +196,8 @@ main {
     text-decoration: none;
     background-color: #1f0561;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    cursor: pointer; }
     main .slideOn:hover {
       box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4); }
     main .slideOn:before {
@@ -334,3 +336,21 @@ main {
         margin: 1rem 0; }
       main .aboutSec #aboutDiv3 ul {
         margin-left: 2rem; }
+  main .refSec {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img1 text1";
+    row-gap: 2rem;
+    column-gap: 2rem;
+    transition: height 0.35s ease-in-out;
+    overflow: hidden; }
+    main .refSec:not(.active) {
+      display: none; }
+    main .refSec .refDiv {
+      padding: 2rem; }
+    main .refSec #refDiv1 {
+      grid-area: text1; }
+      main .refSec #refDiv1 h2 {
+        color: #1f0561;
+        margin-top: 2rem; }
