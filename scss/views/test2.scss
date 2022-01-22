@@ -61,6 +61,7 @@ main{
     grid-area: main;
     & section{
         font-size: 1.6em;
+        background-color: $back-letter;
     }
     & .mainDiv {
         position: sticky;
@@ -74,6 +75,7 @@ main{
         align-items: center;
         justify-content: space-between;
         & .mainNav {
+            height: 100%;
             justify-content: right;
         }
     }

@@ -17,7 +17,7 @@ let linkToggle = document.querySelectorAll('.slideOn');
 
 for(i = 0; i < linkToggle.length; i++){
 
-  linkToggle[i].addEventListener('click', function(event){
+  linkToggle[i].onclick = function toggle (event){
 
     event.preventDefault();
 
@@ -48,6 +48,6 @@ for(i = 0; i < linkToggle.length; i++){
       
     }
     
-  });
+  };
 
 }

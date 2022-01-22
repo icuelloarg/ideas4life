@@ -19,7 +19,7 @@
                              <li><a href="project.html">PROYECTO CV</a></li>
                              <li><a href="">ARCHIVO PDF</a></li>
                              <li><a href="">FEEDBACK</a></li>
-                             <li><a href="">CONTACTO</a></li>
+                             <li><a href="#contact">CONTACTO</a></li>
                         </ul>
                     </div>
                 </div>   
@@ -43,11 +43,10 @@
                     
                     <nav class="menu mainNav flex-row" id="mainNavbar">
                         <ul class="navbar flex-row">
-                            <li><a href="">EDUCACION</a></li>
-                            <li><a href="">EXPERIENCIA</a></li>
-                            <li><a href="">SOBRE MI</a></li>
-                            <li><a href="">REFERENCIAS</a></li>
-                            <li><a href="">MEDIA</a></li>
+                            <li class="slideOn" data-container="slidEd" ><h4> FORMACION </h4></li>
+                            <li class="slideOn active" data-container="slidExp"><h4> EXPERIENCIA</h4></li>
+                            <li class="slideOn" data-container="slideAbo"><h4>SOBRE MI</h4> </li>
+                            <li class="slideOn active" data-container="slidRef"><h4>REFERENCIAS</h4></li>
                         </ul>
                     </nav>                 
                 </div>
@@ -78,10 +77,10 @@
             <section class="education" id="educationSec">
                 <div class="slideOn" data-container="slidEd" id="sliderEd">
                     <div class="container-2" id="titleSlidEd">
-                        <h3 class="title1" id="titleEd"><a>Formación</a></h3>
+                        <h3 class="title1" id="titleEd">Formación</h3>
                     </div>
                 </div>
-                <div class="educationDiv container-2" id="slidEd">
+                <div class="infoDiv educationDiv container-2" id="slidEd">
                     <div class="imgEd" id="imgEd"></div>
                     <div class="edDiv" id="edDiv1">
                         <h2 class="title2" id="titleEd">JavaScript</h2>
@@ -132,7 +131,7 @@
                             <span class="meter5"></span>
                         </div>
                         <div class="meter">
-                            <h4>Git - Github</h4>
+                            <h4><a href="https://github.com/icuelloarg?tab=repositories" target="_blank"> Git - Github</a></h4>
                             <span class="meter6"></span>
                         </div>
                         <div class="meter">
@@ -151,10 +150,10 @@
             <section class="workExp" id="experienceSec">
                 <div class="slideOn active" data-container="slidExp" id="titlExp">
                     <div class="container-2" id="titleSlidExp">
-                        <h3 class="title1" id="titleExp"><a>Experiencia Laboral</a></h3>
+                        <h3 class="title1" id="titleExp">Experiencia Laboral</h3>
                     </div>
                 </div>
-                <div class="experienceDiv container-2 open" id="slidExp">
+                <div class="infoDiv experienceDiv container-2 open" id="slidExp">
                     <div class="imgExp" id="imgExp1"></div>
                     <div class="expDiv" id="expDiv1">
                         <h2 class="title2" id="titleExp">Gerente General - Encargado</h2>
@@ -192,12 +191,12 @@
             <!-- Ends experiences -->
             <!-- Starts about me section -->
             <section class="about" id="about1">
-                <div class="slideOn js-toggle" data-container="slideAbo" id="sliderAbout">
+                <div class="slideOn" data-container="slideAbo" id="sliderAbout">
                     <div class="container-2" id="titleSlidAbout">
-                        <h3 class="title1" id="titleAbout"><a>Sobre mi persona</a></h3>
+                        <h3 class="title1" id="titleAbout">Sobre mi persona</h3>
                     </div>
                 </div>
-                <div class="aboutSec container-2" id="slideAbo">
+                <div class="infoDiv aboutSec container-2" id="slideAbo">
                     <div class="imgAbout" id="imgAbout1"></div>
                     <div class="aboutDiv" id="aboutDiv1">
                         <h2 class="title2" id="titleAbout">Unas palabras para conocerme mejor</h2>
@@ -251,10 +250,10 @@
             <section class="references" id="refSec">
                 <div class="slideOn active" data-container="slidRef" id="titleRef">
                     <div class="container-2" id="titleSlideRef">
-                        <h3 class="title1" id="titleRef"><a>Referencias</a></h3>
+                        <h3 class="title1" id="titleRef">Referencias</h3>
                     </div>
                 </div>
-                <div class="refSec container-2 open" id="slidRef">
+                <div class="infoDiv refSec container-2 open" id="slidRef">
 
                     <div class="refDiv" id="refDiv1">
                         <h2>Sebastián Giobellina</h2><h3> Presidente Ente Autárquico Tucumán Turismo.</h3>
@@ -279,9 +278,20 @@
             </section>
 
         </main>
+        <!-- Ends main and references section -->
+        <!-- Starts footer -->
         <footer>
-
+            <section class="footerSection">
+                <div class="container flex flexCenter">
+                    <div class="contacts flex-row flexSpaceA" id="contact">
+                        <a href="http://www.linkedin.com/in/icuello/" target="_blank"><div class="icon linkedin"></div></a>
+                        <a href="tel:+5493814165933"><div class="icon whatsapp"></div></a>
+                        <a href="mailto:icuelloarg@gmail.com?Subject=Vimos%20tu%20CV"><div class="icon mail"></div></a>                    
+                    </div>
+                </div>
+            </section>
         </footer>
+        <!-- Ends footer -->
     <script src="js/index.js"></script>
 </body>
 </html>
