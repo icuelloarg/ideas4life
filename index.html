@@ -43,10 +43,10 @@
                     
                     <nav class="menu mainNav flex-row" id="mainNavbar">
                         <ul class="navbar flex-row">
-                            <li class="slideOn" data-container="slidEd" ><h4> FORMACION </h4></li>
-                            <li class="slideOn active" data-container="slidExp"><h4> EXPERIENCIA</h4></li>
-                            <li class="slideOn" data-container="slideAbo"><h4>SOBRE MI</h4> </li>
-                            <li class="slideOn active" data-container="slidRef"><h4>REFERENCIAS</h4></li>
+                            <li class="slideOn" data-container="slidEd" id="formLi"><h4> FORMACION </h4></li>
+                            <li class="slideOn active" data-container="slidExp" id="expLi"><h4> EXPERIENCIA</h4></li>
+                            <li class="slideOn" data-container="slideAbo" id="aboutLi"><h4>SOBRE MI</h4> </li>
+                            <li class="slideOn active" data-container="slidRef" id="refLi"><a href="#about1"> <h4>REFERENCIAS</h4></a></li>
                         </ul>
                     </nav>                 
                 </div>
@@ -154,7 +154,7 @@
                     </div>
                 </div>
                 <div class="infoDiv experienceDiv container-2 open" id="slidExp">
-                    <div class="imgExp" id="imgExp1"></div>
+                    <div class="imgExp imgSection" id="imgExp1"></div>
                     <div class="expDiv" id="expDiv1">
                         <h2 class="title2" id="titleExp">Gerente General - Encargado</h2>
                         <h3>Los Castaños Parador de Montaña, Tafi del Valle - SEP-20 / FEB-21</h3>
@@ -164,7 +164,7 @@
                             Durante la operación del complejo, eran mis tareas: gestión integral de las unidades de negocio, gestión y orden del personal, control de stocks y producción, elaboración y planificación de los índices de rentabilidad, pago de empleados y proveedores, seguimiento financiero del negocio, acciones puntuales para aumentar venta o índices.
                             </p> 
                     </div>
-                    <div class="imgExp" id="imgExp2"></div>
+                    <div class="imgExp imgSection" id="imgExp2"></div>
                     <div class="expDiv" id="expDiv2">
                         <h2 class="title2" id="titleExp">CEO Fundador - Director General</h2>
                         <h3>Outlanders EVT - FEB-17 / DIC-20</h3>
@@ -197,14 +197,18 @@
                     </div>
                 </div>
                 <div class="infoDiv aboutSec container-2" id="slideAbo">
-                    <div class="imgAbout" id="imgAbout1"></div>
+                    <div class="imgAbout imgSection" id="imgAbout1"></div>
                     <div class="aboutDiv" id="aboutDiv1">
                         <h2 class="title2" id="titleAbout">Unas palabras para conocerme mejor</h2>
                        <p>Gracias por llegar hasta aquí. En esta sección encontrará un resumen de lo que considero son aspectos importantes de mi personalidad general y mi comportamiento tanto en el ambiente laboral como social.
                             En mi vida he tenido alguna vez que contratar personal, y siempre me ha interesado conocer los aspectos que le motivan y que lo hacen la persona que es. Siguiendo ese principio, me gusta que quien me considere para un puesto conozca sobre mi tanto como a mí me gusta conocer a quienes contrato.
                             </p> 
                     </div>
-                    <div class="imgAbout" id="imgAbout2"></div>
+                    <div id="imgAbout2">
+                        <div class="imgAbout imgSection" id="imgAbout21"></div>
+                        <div class="imgAbout imgSection" id="imgAbout22"></div>
+                        <div class="imgAbout imgSection" id="imgAbout23"></div>
+                    </div>
                     <div class="aboutDiv" id="aboutDiv2">
                         <h2 class="title2" id="titleAbout">Sobre mi</h2>
                         <p>Me considero una persona con orientación a resultados, evalúo mis éxitos y fracasos de acuerdo a los resultados de mis acciones. Me caracterizo por fijarme metas fuertes y objetivos claros, mayoritariamente escalonados, para alcanzar mis metas.</p> 
@@ -226,7 +230,7 @@
 
                         <p>Tengo un compromiso propio, que me costó convertirlo en un hábito, pero me hace muy orgulloso. Desde hace unos años y gracias a abrirme a nuevas experiencias y a muchos consejos, trabajo todos los días por ser un poquito mejor que el día anterior. Leyendo algo nuevo, aprendiendo una nueva disciplina, cocinando algo distinto, ayudando a quien lo necesite. Realmente ha cambiado mi vida y creo que me abrió muchas puertas. </p>
                     </div>
-                    <div class="imgAbout" id="imgAbout3"></div>
+                    <div class="imgAbout imgSection" id="imgAbout3"></div>
                     <div class="aboutDiv" id="aboutDiv3">
                         <h2 class="title2" id="titleAbout">Fortalezas y Debilidades</h2>
                         <h3>Fortalezas</h3>
@@ -242,6 +246,19 @@
                             <li>Considero que el tiempo es dinero, y a veces debido a ello me cuesta separar los tiempos de trabajo de los tiempos de descanso. Para mejorar suelo proponerme estructuras de horarios u objetivos por plazos.</li>
                             <li>Puedo desmotivarme fuertemente cuando por razones propias o externas un proyecto se ve amenazado o terminado prematuramente. Me afecta sensiblemente. Suelo entonces tomarme un tiempo para pensar en lo que se podría haber hecho distinto y aprender para la siguiente oportunidad.</li>
                         </ul>
+                    </div>
+                    <div class="imgAbout imgSection" id="imgAbout4"></div>
+                    <div class="aboutDiv" id="aboutDiv4">
+                        <h2 class="title2" id="titleAbout">Información relevante</h2>
+                        <h4>Gracias por haber llegado aquí. A continuación le ofrezco mis disponibilidades.
+                        </h4>
+                        <ul>
+                            <li>Resido al Norte de Argentina, poseo conexión a internet de alta velocidad por fibra óptica de 100MB de bajada y 20MB de subida.</li>
+                            <li>Dispongo de disponibilidad horaria full-time, para trabajar en el horario de cualquier país del mundo.</li>
+                            <li>Acepto pagos en pesos argentinos y en monedas extranjeras en el exterior mediante transferencia bancaria, <b>y pagos en criptomonedas</b> en alguna de mis billeteras virtuales.</li>
+                            <li>Estoy abierto a ser relocalizado, tanto dentro como fuera del país.</li>
+                        </ul>
+
                     </div>
                 </div>
             </section>

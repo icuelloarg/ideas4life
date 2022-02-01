@@ -13,6 +13,13 @@ lessParagraph.onclick = () => {
     
 }
 
+/* function moveHash(dataElement){
+  window.location.hash = dataElement;
+}
+
+document.getElementById("formLi").onclick = function colales(){console.log("slidEd")};
+document.getElementById("expLi").onclick = moveHash("slidExp"); */
+
 let linkToggle = document.querySelectorAll('.slideOn');
 
 for(i = 0; i < linkToggle.length; i++){
