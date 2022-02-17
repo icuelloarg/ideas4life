@@ -20,6 +20,11 @@ lessParagraph.onclick = () => {
 document.getElementById("formLi").onclick = function colales(){console.log("slidEd")};
 document.getElementById("expLi").onclick = moveHash("slidExp"); */
 
+
+function moverse(){
+  location.hash = refSec;
+}
+
 let linkToggle = document.querySelectorAll('.slideOn');
 
 for(i = 0; i < linkToggle.length; i++){
@@ -54,7 +59,18 @@ for(i = 0; i < linkToggle.length; i++){
       });
       
     }
+    setTimeout(moverse, 1500);
     
   };
 
+}
+
+function moverse(){
+  location.hash = refSec;
+}
+
+const references = document.getElementById("refLi");
+
+references.onclick = function (){
+  setTimeout(moverse, 1500);
 }
